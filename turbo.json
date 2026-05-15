@@ -1,6 +1,13 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
+  "globalEnv": [
+    "GMAIL_USER",
+    "GMAIL_APP_PASSWORD",
+    "CONTACT_TO_EMAIL",
+    "RESEND_API_KEY",
+    "RESEND_FROM_EMAIL"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
