@@ -9,7 +9,7 @@ export function SiteHeader() {
       <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400 transition hover:text-sky-300"
+          className="text-sm font-semibold tracking-[0.25em] text-sky-400 uppercase transition hover:text-sky-300"
         >
           Favourof
         </Link>
@@ -31,7 +31,7 @@ export function SiteHeader() {
             href="/contact"
             className="rounded-full border border-border/60 px-4 py-2 text-sm font-medium transition duration-300 hover:-translate-y-0.5 hover:bg-accent hover:text-accent-foreground"
           >
-            Let&apos;s talk
+            Let&apos;s Talk
           </Link>
         </div>
 

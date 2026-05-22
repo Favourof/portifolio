@@ -10,9 +10,34 @@ export type Project = {
   featured?: boolean
   githubUrl?: string
   liveUrl?: string
+  image?: {
+    src: string
+    alt: string
+  }
 }
 
 export const projects: Project[] = [
+  {
+    slug: "node-event-loop-optimization",
+    title: "Node.js Performance Optimization",
+    summary:
+      "A profiling case study that cut request latency from 3.5 seconds to 54 milliseconds by removing event-loop bottlenecks.",
+    challenge:
+      "The system was spending too much time in a CPU-bound path, which made every request feel slow under load.",
+    solution:
+      "I profiled the hot path, moved expensive work off the event loop, and used Worker Threads to keep the API responsive.",
+    impact:
+      "The final result was a 98% latency reduction and a much clearer picture of how to diagnose Node.js performance issues.",
+    role: "Performance engineering and diagnosis",
+    stack: ["Node.js", "Worker Threads", "Profiling", "Load testing"],
+    featured: true,
+    githubUrl:
+      "https://github.com/Favourof/profiling-and-performance-optimization-node.js",
+    image: {
+      src: "/images/projects/node-event-loop-optimization.svg",
+      alt: "Node.js performance optimization cover image",
+    },
+  },
   {
     slug: "mern-auth-system",
     title: "MERN Auth System",
@@ -25,56 +50,81 @@ export const projects: Project[] = [
     impact:
       "The system gives any app a safer, production-minded starting point for user management and access control.",
     role: "Full-stack ownership",
-    stack: ["Node.js", "Express.js", "TypeScript", "MongoDB", "JWT", "bcryptjs"],
+    stack: [
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "MongoDB",
+      "JWT",
+      "bcryptjs",
+    ],
     featured: true,
     githubUrl: "https://github.com/Favourof/mern-auth-system",
-  },
-  {
-    slug: "expense-tracker",
-    title: "Expense Tracker",
-    summary:
-      "A full-stack app that helps users record income, track spending, and understand their money flow in one place.",
-    challenge:
-      "Users need a simple way to see where their money is going and make better financial decisions.",
-    solution:
-      "I built a structured full-stack experience for logging financial activity, viewing balances, and tracking user spending behavior.",
-    impact:
-      "The app helps users make smarter decisions by giving them a clear picture of income and expenses.",
-    role: "Frontend and backend development",
-    stack: ["React", "API", "Deployment"],
-    featured: true,
-    githubUrl: "https://github.com/Favourof/expense-tracker",
-    liveUrl: "https://expense-tracker-Front-end.vercel.app",
+    liveUrl: "https://client-mu-ebon.vercel.app",
+    image: {
+      src: "/images/projects/mern-auth-system.png",
+      alt: "MERN auth system cover image",
+    },
   },
   {
     slug: "microservice-ecommerce",
-    title: "Microservice Ecommerce",
+    title: "Ecommerce Microservices Backend",
     summary:
-      "A microservice-based e-commerce backend built to split major business areas into separate services.",
-    challenge: "As systems grow, a monolith becomes harder to maintain and scale.",
+      "A microservice-based commerce backend that splits auth and cart concerns into separate services behind an API gateway.",
+    challenge:
+      "As systems grow, a monolith becomes harder to maintain, and isolated business concerns need clearer boundaries.",
     solution:
-      "I separated the backend into service-oriented parts so each business concern could evolve more safely and independently.",
+      "I separated the backend into service-oriented parts and used a gateway pattern so each concern could evolve more safely.",
     impact:
-      "The architecture makes future scaling, maintenance, and feature expansion easier to manage.",
+      "The architecture makes scaling, maintenance, and future feature work easier to reason about.",
     role: "Backend architecture and service-level development",
-    stack: ["Microservices", "Node.js", "API design"],
+    stack: ["Microservices", "Node.js", "API Gateway", "Architecture"],
     featured: true,
     githubUrl: "https://github.com/Favourof/bankend-microservice-ecormmrce",
+    image: {
+      src: "/images/projects/ecommerce-microservices-backend.jpg",
+      alt: "Ecommerce microservices backend cover image",
+    },
   },
   {
     slug: "payverse-backend",
     title: "PayVerse Backend",
     summary:
-      "A backend service for payment or finance workflows built around structured APIs and safe business logic.",
+      "A payment-focused backend that documents architecture decisions, data modeling, and the trade-offs behind a finance workflow.",
     challenge:
-      "Financial systems need reliability, control, and careful handling of sensitive operations.",
+      "Financial systems need reliability, clear transaction boundaries, and careful handling of sensitive operations.",
     solution:
-      "I designed the backend around controlled API flows and careful business logic for sensitive operations.",
+      "I designed the backend around controlled API flows, clear persistence rules, and explicit architecture trade-offs.",
     impact:
-      "The project shows how I think about safe data handling and dependable backend systems.",
+      "The project shows how I think about safe data handling, dependable systems, and practical backend choices.",
     role: "Backend development",
-    stack: ["Backend APIs", "Business logic", "Data handling"],
+    stack: ["Node.js", "PostgreSQL", "Payments", "Architecture"],
+    featured: true,
     githubUrl: "https://github.com/Favourof/payVerse-backend",
+    image: {
+      src: "/images/projects/payverse-backend.png",
+      alt: "PayVerse backend cover image",
+    },
+  },
+  {
+    slug: "expense-tracker",
+    title: "Expense Tracker",
+    summary:
+      "A full-stack expense tracker PWA that helps users record income, monitor spending, and review their money flow in one place.",
+    challenge:
+      "Users need a fast, installable way to track money and stay productive on mobile even when connectivity is unreliable.",
+    solution:
+      "I built a structured full-stack experience for logging financial activity, viewing balances, tracking spending patterns, and supporting a progressive web app workflow.",
+    impact:
+      "The app helps users make smarter decisions by giving them a clear picture of income and expenses in a product they can use like a native app.",
+    role: "Frontend and backend development",
+    stack: ["React", "PWA", "API", "Deployment"],
+    githubUrl: "https://github.com/Favourof/expense-tracker",
+    liveUrl: "https://expense-tracker-nine-steel.vercel.app",
+    image: {
+      src: "/images/projects/expense-tracker.png",
+      alt: "Expense tracker cover image",
+    },
   },
   {
     slug: "crime",
@@ -90,5 +140,10 @@ export const projects: Project[] = [
     role: "Full-stack development",
     stack: ["Frontend", "Backend", "Client-server architecture"],
     githubUrl: "https://github.com/Favourof/crime",
+    liveUrl: "https://crime-client-nu.vercel.app/",
+    image: {
+      src: "/images/projects/crime-system.png",
+      alt: "Crime system cover image",
+    },
   },
 ]

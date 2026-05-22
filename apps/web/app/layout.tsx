@@ -21,7 +21,28 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Favourof | Backend-first full-stack developer",
   description:
-    "Portfolio for a backend-first full-stack developer building secure systems, reliable APIs, and production-ready web apps.",
+    "Portfolio for a backend-first full-stack developer building secure systems, reliable APIs, and polished frontends.",
+  keywords: [
+    "backend engineer",
+    "full-stack developer",
+    "Node.js",
+    "TypeScript",
+    "PostgreSQL",
+    "fintech",
+    "SaaS",
+  ],
+  openGraph: {
+    title: "Favourof | Backend-first full-stack developer",
+    description:
+      "Portfolio for a backend-first full-stack developer building secure systems, reliable APIs, and polished frontends.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Favourof | Backend-first full-stack developer",
+    description:
+      "Portfolio for a backend-first full-stack developer building secure systems, reliable APIs, and polished frontends.",
+  },
 }
 
 export default function RootLayout({

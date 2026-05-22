@@ -1,5 +1,4 @@
 import Link from "next/link"
-
 import { socialLinks } from "@/lib/data/social-links"
 
 export function SiteFooter() {
@@ -26,12 +25,13 @@ export function SiteFooter() {
 
         <div className="flex flex-wrap gap-3">
           {socialLinks.map((item) => (
-            <span
+            <Link
               key={item.label}
-              className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground"
+              href={item.href}
+              className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground transition hover:text-foreground"
             >
               {item.label}
-            </span>
+            </Link>
           ))}
         </div>
       </div>

@@ -107,7 +107,7 @@ export function ContactForm() {
           onChange={(event) =>
             setForm((current) => ({ ...current, message: event.target.value }))
           }
-          placeholder="Tell me about your project or opportunity"
+          placeholder="Tell me about your project, timeline, and what success looks like"
           className="rounded-2xl border border-border/60 bg-background px-4 py-3 transition outline-none focus:border-sky-400"
         />
       </label>

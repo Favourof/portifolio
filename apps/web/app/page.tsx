@@ -2,7 +2,7 @@ import { AboutSection } from "@/components/sections/about"
 import { ContactCta } from "@/components/sections/contact-cta"
 import { FeaturedProjects } from "@/components/sections/featured-projects"
 import { HeroSection } from "@/components/sections/hero"
-import { SocialLinksSection } from "@/components/sections/social-links"
+import { TrustSignalsSection } from "@/components/sections/social-links"
 import { TeachingSection } from "@/components/sections/teaching"
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
       <AboutSection />
       <FeaturedProjects />
       <TeachingSection />
-      <SocialLinksSection />
+      <TrustSignalsSection />
       <ContactCta />
     </main>
   )

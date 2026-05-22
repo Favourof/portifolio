@@ -1,5 +1,5 @@
 import { ContactForm } from "@/components/contact-form"
-import { SocialLinksSection } from "@/components/sections/social-links"
+import { TrustSignalsSection } from "@/components/sections/social-links"
 
 export default function ContactPage() {
   return (
@@ -11,10 +11,11 @@ export default function ContactPage() {
         Let&apos;s build something useful.
       </h1>
       <p className="mt-6 max-w-3xl text-base leading-8 text-muted-foreground sm:text-lg">
-        Send me a message and I&apos;ll receive it directly in my Gmail inbox.
+        Send me a message about backend systems, fintech, SaaS, or a product that needs a reliable
+        builder.
       </p>
       <ContactForm />
-      <SocialLinksSection />
+      <TrustSignalsSection />
     </main>
   )
 }

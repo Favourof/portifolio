@@ -1,21 +1,35 @@
-# shadcn/ui monorepo template
+# Favourof Portfolio
 
-This is a Next.js monorepo template with shadcn/ui.
+Personal portfolio and case-study site for Favourof, a backend-first full-stack developer.
 
-## Adding components
+## What this repo is for
 
-To add components to your app, run the following command at the root of your `web` app:
+- A public portfolio website for presenting selected projects
+- A contact entry point for freelance and collaboration inquiries
+- A place to showcase backend depth, product thinking, and teaching experience
+
+## Live site
+
+- Add the deployed URL here after deployment
+
+## Highlights
+
+- Backend-first positioning for fintech and SaaS-style work
+- Frontend delivery with React and Next.js when the product needs it
+- Secure auth systems with token rotation and RBAC
+- Payments and architecture case studies
+- Performance work with measurable latency improvement
+- Teaching and mentorship experience
+
+## Local development
 
 ```bash
-pnpm dlx shadcn@latest add button -c apps/web
+npm install
+npm run dev
 ```
 
-This will place the ui components in the `packages/ui/src/components` directory.
+## Notes
 
-## Using components
-
-To use the components in your app, import them from the `ui` package.
-
-```tsx
-import { Button } from "@workspace/ui/components/button";
-```
+- Update the social links and contact details before sharing publicly
+- Add screenshots or case-study links when the final deployment is ready
+- Keep project summaries outcome-focused and specific

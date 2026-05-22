@@ -33,8 +33,6 @@ export async function POST(request: Request) {
     const resendApiKey = process.env.RESEND_API_KEY
     const contactToEmail = process.env.CONTACT_TO_EMAIL
 
-    console.log(resendApiKey, contactToEmail)
-
     if (!resendApiKey || !contactToEmail) {
       return NextResponse.json(
         {

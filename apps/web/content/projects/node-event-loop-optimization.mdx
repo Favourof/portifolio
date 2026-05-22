@@ -1,0 +1,24 @@
+---
+title: "Node.js Performance Optimization"
+slug: "node-event-loop-optimization"
+summary: "A profiling case study that cut request latency from 3.5 seconds to 54 milliseconds by removing event-loop bottlenecks."
+---
+
+## Challenge
+The system was spending too much time in a CPU-bound path, which made every request feel slow under load.
+
+## Solution
+I profiled the hot path, moved expensive work off the event loop, and used Worker Threads to keep the API responsive.
+
+## What I Built
+- Profiling to isolate the slowest parts of the request flow
+- A CPU-heavy workload moved off the main event loop
+- Worker Threads to keep the API responsive under pressure
+- Load testing to compare before and after performance
+- Documentation of the trade-offs behind the optimization
+
+## Impact
+The final result was a 98% latency reduction and a much clearer picture of how to diagnose Node.js performance issues.
+
+## Why It Matters
+This project shows that I can turn a vague slowdown into a measurable engineering improvement.

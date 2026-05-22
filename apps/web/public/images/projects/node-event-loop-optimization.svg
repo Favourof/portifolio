@@ -1,0 +1,13 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="36" fill="#08111F"/>
+  <circle cx="184" cy="140" r="92" fill="#38BDF8" fill-opacity="0.16"/>
+  <circle cx="1000" cy="130" r="138" fill="#14B8A6" fill-opacity="0.12"/>
+  <circle cx="1030" cy="520" r="180" fill="#22C55E" fill-opacity="0.12"/>
+  <rect x="96" y="92" width="1008" height="490" rx="28" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <path d="M198 440C280 286 362 244 448 320C535 397 612 425 702 362C793 299 884 244 1002 168" stroke="#38BDF8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M198 440C280 286 362 244 448 320C535 397 612 425 702 362C793 299 884 244 1002 168" stroke="#38BDF8" stroke-opacity="0.2" stroke-width="32" stroke-linecap="round"/>
+  <rect x="184" y="468" width="832" height="18" rx="9" fill="#1E293B"/>
+  <rect x="184" y="468" width="530" height="18" rx="9" fill="#38BDF8"/>
+  <text x="144" y="180" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">Node.js Performance Optimization</text>
+  <text x="144" y="236" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="24">3.5s to 54ms latency reduction</text>
+</svg>

@@ -3,6 +3,7 @@ import path from "path"
 import type { ReactNode } from "react"
 
 import Link from "next/link"
+import Image from "next/image"
 import { notFound } from "next/navigation"
 import matter from "gray-matter"
 import ReactMarkdown from "react-markdown"
@@ -55,6 +56,18 @@ export default async function ProjectDetailPage({ params }: Props) {
   return (
     <main className="mx-auto min-h-screen w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
       <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">Project detail</p>
+      {project.image ? (
+        <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-3xl border border-border/60 bg-card/70 shadow-sm">
+          <Image
+            src={project.image.src}
+            alt={project.image.alt}
+            fill
+            priority
+            sizes="(min-width: 1024px) 768px, 100vw"
+            className="object-cover"
+          />
+        </div>
+      ) : null}
       <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
         {project.title}
       </h1>

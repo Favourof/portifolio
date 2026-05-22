@@ -9,8 +9,8 @@ export default function ProjectsPage() {
         Selected work that shows how I think and build.
       </h1>
       <p className="mt-6 max-w-3xl text-base leading-8 text-muted-foreground sm:text-lg">
-        These projects highlight security, backend logic, full-stack delivery, and scalable
-        architecture.
+        These projects highlight security, backend logic, performance work, full-stack delivery,
+        and scalable architecture.
       </p>
 
       <section className="mt-10">
