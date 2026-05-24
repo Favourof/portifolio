@@ -1,4 +1,4 @@
-import { ArrowRight, Mail } from "lucide-react"
+import { ArrowRight, ArrowUpRight, Mail } from "lucide-react"
 import Link from "next/link"
 
 export function HeroSection() {
@@ -38,7 +38,7 @@ export function HeroSection() {
           rel="noreferrer noopener"
           className="inline-flex items-center justify-center gap-2 rounded-full border border-border/60 px-5 py-3 text-sm font-semibold transition duration-300 hover:-translate-y-0.5 hover:bg-accent hover:text-accent-foreground"
         >
-          GitHub
+          GitHub <ArrowUpRight className="size-4" />
         </Link>
       </div>
 

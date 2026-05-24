@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
 
 import { socialLinks } from "@/lib/data/social-links"
 
@@ -68,8 +69,8 @@ export function TrustSignalsSection() {
               className="rounded-3xl border border-border/60 bg-card/70 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:bg-accent/50"
               style={{ animationDelay: `${index * 70}ms` }}
             >
-              <p className="text-sm font-semibold text-foreground">
-                {item.label}
+              <p className="inline-flex items-center gap-1 text-sm font-semibold text-foreground">
+                {item.label} <ArrowUpRight className="size-3.5" />
               </p>
               <p className="mt-2 text-sm leading-6 text-muted-foreground">
                 {item.handle}
@@ -92,7 +93,7 @@ export function TrustSignalsSection() {
           rel="noreferrer noopener"
           className="inline-flex items-center justify-center rounded-full border border-border/60 px-5 py-3 text-sm font-semibold transition duration-300 hover:-translate-y-0.5 hover:bg-accent hover:text-accent-foreground"
         >
-          Open LinkedIn
+          Open LinkedIn <ArrowUpRight className="size-4" />
         </Link>
       </div>
     </section>

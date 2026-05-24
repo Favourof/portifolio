@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
 import { socialLinks } from "@/lib/data/social-links"
 
 export function SiteFooter() {
@@ -30,9 +31,9 @@ export function SiteFooter() {
               href={item.href}
               target="_blank"
               rel="noreferrer noopener"
-              className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground transition hover:text-foreground"
+              className="inline-flex items-center gap-1 rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground transition hover:text-foreground"
             >
-              {item.label}
+              {item.label} <ArrowUpRight className="size-3" />
             </Link>
           ))}
         </div>

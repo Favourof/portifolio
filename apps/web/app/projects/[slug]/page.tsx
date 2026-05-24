@@ -4,6 +4,7 @@ import type { ReactNode } from "react"
 
 import Link from "next/link"
 import Image from "next/image"
+import { ArrowUpRight } from "lucide-react"
 import { notFound } from "next/navigation"
 import matter from "gray-matter"
 import ReactMarkdown from "react-markdown"
@@ -52,9 +53,9 @@ const markdownComponents = {
       href={href}
       target={href?.startsWith("http") ? "_blank" : undefined}
       rel={href?.startsWith("http") ? "noreferrer noopener" : undefined}
-      className="text-sky-400 underline decoration-sky-400/40 underline-offset-4 transition hover:text-sky-300"
+      className="inline-flex items-center gap-1 text-sky-400 underline decoration-sky-400/40 underline-offset-4 transition hover:text-sky-300"
     >
-      {children}
+      {children} {href?.startsWith("http") ? <ArrowUpRight className="size-3.5" /> : null}
     </a>
   ),
 }
@@ -128,9 +129,9 @@ export default async function ProjectDetailPage({ params }: Props) {
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer noopener"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+              className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground"
             >
-              GitHub
+              GitHub <ArrowUpRight className="size-3.5" />
             </Link>
           ) : null}
           {project.liveUrl ? (
@@ -138,9 +139,9 @@ export default async function ProjectDetailPage({ params }: Props) {
               href={project.liveUrl}
               target="_blank"
               rel="noreferrer noopener"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+              className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground"
             >
-              Live demo
+              Live demo <ArrowUpRight className="size-3.5" />
             </Link>
           ) : null}
         </div>

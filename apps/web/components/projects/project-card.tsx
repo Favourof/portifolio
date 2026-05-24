@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import { ArrowUpRight } from "lucide-react"
 
 import type { Project } from "@/lib/data/projects"
 
@@ -48,9 +49,9 @@ export function ProjectCard({ project }: Props) {
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer noopener"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+              className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground"
             >
-              GitHub
+              GitHub <ArrowUpRight className="size-3.5" />
             </Link>
           ) : null}
           {project.liveUrl ? (
@@ -58,9 +59,9 @@ export function ProjectCard({ project }: Props) {
               href={project.liveUrl}
               target="_blank"
               rel="noreferrer noopener"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+              className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground"
             >
-              Live demo
+              Live demo <ArrowUpRight className="size-3.5" />
             </Link>
           ) : null}
         </div>
