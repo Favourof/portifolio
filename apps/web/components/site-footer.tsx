@@ -28,6 +28,8 @@ export function SiteFooter() {
             <Link
               key={item.label}
               href={item.href}
+              target="_blank"
+              rel="noreferrer noopener"
               className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground transition hover:text-foreground"
             >
               {item.label}

@@ -41,6 +41,22 @@ const markdownComponents = {
     <ul className="mt-4 list-disc space-y-3 pl-6 text-muted-foreground">{children}</ul>
   ),
   li: ({ children }: { children?: ReactNode }) => <li className="leading-8">{children}</li>,
+  a: ({
+    href,
+    children,
+  }: {
+    href?: string
+    children?: ReactNode
+  }) => (
+    <a
+      href={href}
+      target={href?.startsWith("http") ? "_blank" : undefined}
+      rel={href?.startsWith("http") ? "noreferrer noopener" : undefined}
+      className="text-sky-400 underline decoration-sky-400/40 underline-offset-4 transition hover:text-sky-300"
+    >
+      {children}
+    </a>
+  ),
 }
 
 export default async function ProjectDetailPage({ params }: Props) {
@@ -108,12 +124,22 @@ export default async function ProjectDetailPage({ params }: Props) {
             Back to projects
           </Link>
           {project.githubUrl ? (
-            <Link href={project.githubUrl} className="text-sm font-medium text-muted-foreground hover:text-foreground">
+            <Link
+              href={project.githubUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+            >
               GitHub
             </Link>
           ) : null}
           {project.liveUrl ? (
-            <Link href={project.liveUrl} className="text-sm font-medium text-muted-foreground hover:text-foreground">
+            <Link
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+            >
               Live demo
             </Link>
           ) : null}

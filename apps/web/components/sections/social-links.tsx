@@ -20,24 +20,21 @@ const proofPoints = [
   },
   {
     title: "Teaching experience",
-    detail: "Instructor at SQI College of ICT, teaching front-end and back-end fundamentals.",
+    detail:
+      "Instructor at SQI College of ICT, teaching front-end and back-end fundamentals.",
   },
 ]
 
 export function TrustSignalsSection() {
   return (
     <section className="section-shell py-14 sm:py-16">
-      <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
+      <p className="text-sm font-semibold tracking-[0.3em] text-sky-400 uppercase">
         Find me online
       </p>
       <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
           Proof, writing, and direct contact
         </h2>
-        <p className="max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base">
-          These links make it easy to read your work, verify your experience, and reach you
-          without leaving the portfolio guessing.
-        </p>
       </div>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
@@ -47,14 +44,18 @@ export function TrustSignalsSection() {
             className="rounded-3xl border border-border/60 bg-card/70 p-5 shadow-sm transition duration-300 hover:-translate-y-1"
             style={{ animationDelay: `${index * 70}ms` }}
           >
-            <p className="text-sm font-semibold text-foreground">{item.title}</p>
-            <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.detail}</p>
+            <p className="text-sm font-semibold text-foreground">
+              {item.title}
+            </p>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              {item.detail}
+            </p>
           </div>
         ))}
       </div>
 
       <div className="mt-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
+        <p className="text-sm font-semibold tracking-[0.3em] text-sky-400 uppercase">
           Social links
         </p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
@@ -62,11 +63,17 @@ export function TrustSignalsSection() {
             <Link
               key={item.label}
               href={item.href}
+              target="_blank"
+              rel="noreferrer noopener"
               className="rounded-3xl border border-border/60 bg-card/70 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:bg-accent/50"
               style={{ animationDelay: `${index * 70}ms` }}
             >
-              <p className="text-sm font-semibold text-foreground">{item.label}</p>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.handle}</p>
+              <p className="text-sm font-semibold text-foreground">
+                {item.label}
+              </p>
+              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                {item.handle}
+              </p>
             </Link>
           ))}
         </div>
@@ -81,6 +88,8 @@ export function TrustSignalsSection() {
         </Link>
         <Link
           href="https://www.linkedin.com/in/favour-omotosho-ezekiel"
+          target="_blank"
+          rel="noreferrer noopener"
           className="inline-flex items-center justify-center rounded-full border border-border/60 px-5 py-3 text-sm font-semibold transition duration-300 hover:-translate-y-0.5 hover:bg-accent hover:text-accent-foreground"
         >
           Open LinkedIn

@@ -8,9 +8,10 @@ export function AboutSection() {
             Backend-first full-stack developer who cares about outcomes
           </h2>
           <p className="mt-4 max-w-4xl text-base leading-8 text-muted-foreground sm:text-lg">
-            I build secure APIs, auth systems, backend workflows, and polished frontend experiences
-            for products that need to be reliable from day one. My sweet spot is the intersection
-            of product thinking, performance, and clean engineering.
+            I build secure APIs, auth systems, backend workflows, and user-focused frontends for
+            products that need to feel reliable from day one. My strongest area is backend
+            engineering, supported by product thinking, performance awareness, and clean
+            engineering.
           </p>
           <p className="mt-4 max-w-4xl text-base leading-8 text-muted-foreground sm:text-lg">
             I also teach web development at SQI College of ICT, which keeps my communication sharp

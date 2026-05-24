@@ -22,7 +22,7 @@ export default function AboutPage() {
               "Secure auth and user management",
               "Node.js, Express, MongoDB, Next.js",
               "Microservices and scalable architecture",
-              "Frontend delivery when the product needs it",
+              "Frontend experiences that feel clear and intuitive",
             ].map((item) => (
               <div
                 key={item}
@@ -39,9 +39,9 @@ export default function AboutPage() {
             How I work
           </p>
           <p className="mt-4 text-base leading-8 text-muted-foreground">
-            I prefer small, reviewable changes, clear communication, and practical solutions over
-            over-engineering. That style fits remote work, product teams, and projects that need a
-            developer who can think across the stack without losing focus on the backend.
+            I value clear communication, incremental delivery, and practical engineering decisions.
+            That approach fits remote teams, product environments, and projects that need a
+            developer who can think across the stack while keeping backend quality high.
           </p>
         </div>
       </section>

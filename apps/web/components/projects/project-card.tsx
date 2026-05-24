@@ -46,6 +46,8 @@ export function ProjectCard({ project }: Props) {
           {project.githubUrl ? (
             <Link
               href={project.githubUrl}
+              target="_blank"
+              rel="noreferrer noopener"
               className="text-sm font-medium text-muted-foreground hover:text-foreground"
             >
               GitHub
@@ -54,6 +56,8 @@ export function ProjectCard({ project }: Props) {
           {project.liveUrl ? (
             <Link
               href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer noopener"
               className="text-sm font-medium text-muted-foreground hover:text-foreground"
             >
               Live demo
